@@ -1,0 +1,25 @@
+<head>
+</head>
+
+
+<h2><%= @cocktail.name %></h2>
+
+<div class="cards">
+
+  <% @cocktail.doses.each do |dose| %>
+
+  <div class="card-category">
+   <%= dose.description %>
+   <%= link_to dose_path(dose), method: :delete, data: { confirm: 'Sure?'} do  %>
+    <i class="far fa-trash-alt fa-xs" style="padding: 4px; color: lightblue"></i>
+   <% end %>
+  </div>
+
+  <% end %>
+</div>
+
+<%= link_to "Back to list", cocktails_path %>
+<%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
+
+
+input_html: {multiple: true}, include_hidden: false

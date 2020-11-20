@@ -24,6 +24,10 @@ gem 'jbuilder', '~> 2.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+#protect info
+gem 'dotenv-rails', groups: [:development, :test]
+# add images on cloundinary
+gem 'cloudinary', '~> 1.16.0'
 
 #added from instructions
 gem 'autoprefixer-rails'

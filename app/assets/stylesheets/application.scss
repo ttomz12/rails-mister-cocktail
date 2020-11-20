@@ -11,3 +11,53 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+.banner {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .banner-title {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 100px;
+  width: 30%;
+  text-align: center;
+  margin: 10px 10px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  font-style: italic;
+  border-radius: 5px;
+
+  a {
+    color: white;
+  }
+}
+
+.footer {
+  text-align: center;
+
+  a {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+  }
+}
