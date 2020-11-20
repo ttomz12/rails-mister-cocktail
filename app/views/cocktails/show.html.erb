@@ -10,6 +10,7 @@
 
   <div class="card-category">
    <%= dose.description %>
+   <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
    <%= link_to dose_path(dose), method: :delete, data: { confirm: 'Sure?'} do  %>
     <i class="far fa-trash-alt fa-xs" style="padding: 4px; color: lightblue"></i>
    <% end %>
@@ -21,5 +22,4 @@
 <%= link_to "Back to list", cocktails_path %>
 <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
 
-
-input_html: {multiple: true}, include_hidden: false
+<!-- #input_html: {multiple: true}, include_hidden: false -->
