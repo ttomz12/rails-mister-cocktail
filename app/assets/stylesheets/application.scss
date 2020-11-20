@@ -20,8 +20,12 @@
   h2 {
   font-weight: bolder;
   font-family: 'Permanent Marker', cursive;
+  color: yellow;
   }
+}
 
+body {
+  background-color: black;
 }
 
 .banner {
@@ -67,21 +71,22 @@
   margin: 10px 10px;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: white;
   font-style: italic;
   border-radius: 5px;
   font-family: 'Permanent Marker', cursive;
 
   a {
-    color: white;
+    color: black;
   }
 }
 
 .card-container {
   display: flex;
   justify-content: center;
+
   .card-show {
-    height: 300px;
+    height: auto;
     width: 50%;
     text-align: center;
     margin: 5px 5px;
@@ -108,8 +113,17 @@
 
 .form-inputs {
   font-family: 'Permanent Marker', cursive;
+  color: white;
 }
 
 .form-actions {
   font-family: 'Permanent Marker', cursive;
+  color: white;
+}
+
+.header-form h2 {
+  font-family: 'Permanent Marker', cursive;
+  color: yellow;
+  text-align: center;
+  font-size: 25px;
 }

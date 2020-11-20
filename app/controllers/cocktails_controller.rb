@@ -3,17 +3,10 @@ class CocktailsController < ApplicationController
 
   def index
     @cocktails = Cocktail.all
-    #how to find an image here
   end
 
   def show
     @cocktail = Cocktail.find(params[:id])
-    #try and include the ingredients
-    #@ingredients = Ingredient.where(id: params[:dose][:ingredient])
-    #ingredients.each do |ingredient|
-      #dose = Dose.new(ingredient: ingredient, cocktail: @cocktail)
-      #dose.save
-    #end
   end
 
   def new
