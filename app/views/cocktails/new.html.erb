@@ -1,5 +1,14 @@
-<h2>Add a new cocktail in the form below:</h2>
+<div class="navbar-lewagon">
+  <div class="nav_link">
+    <%= link_to "Back to list", cocktails_path %>
+  </div>
+</div>
 
-<%= render 'form', cocktail: @cocktail %>
+<div class="header">
+  <h2>Add a new cocktail in the form below:</h2>
+</div>
 
-<%= link_to "Back", cocktails_path %>
+<div class="card-container">
+  <%= render 'form', cocktail: @cocktail %>
+</div>
+

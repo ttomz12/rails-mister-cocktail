@@ -1,25 +1,24 @@
-<head>
-</head>
+<head></head>
 
-
-<h2><%= @cocktail.name %></h2>
-
-<div class="cards">
-
-  <% @cocktail.doses.each do |dose| %>
-
-  <div class="card-category">
-   <%= dose.description %>
-   <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
-   <%= link_to dose_path(dose), method: :delete, data: { confirm: 'Sure?'} do  %>
-    <i class="far fa-trash-alt fa-xs" style="padding: 4px; color: lightblue"></i>
-   <% end %>
+<div class="navbar-lewagon">
+  <div class="nav_link">
+    <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
+    <%= link_to "Back to list", cocktails_path %>
   </div>
-
-  <% end %>
 </div>
-
-<%= link_to "Back to list", cocktails_path %>
-<%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
+<div class="header"><h2><%= @cocktail.name %></h2></div>
+<div class="card-container">
+  <div class="card-show">
+    <div class="card-image"><%= cl_image_tag @cocktail.photo.key, height: 200, width: 300, crop: :fill %></div>
+    <% @cocktail.doses.each do |dose| %>
+      <div class="card-info">
+       <%= dose.description %>
+         <%= link_to dose_path(dose), method: :delete, data: { confirm: 'Sure?'} do  %>
+          <i class="far fa-trash-alt fa-xs" style="padding: 4px; color: lightblue"></i>
+         <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
 
 <!-- #input_html: {multiple: true}, include_hidden: false -->

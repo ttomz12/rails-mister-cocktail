@@ -6,7 +6,10 @@
 <body>
   <div class="banner" style="background-image: url('https://images.pexels.com/photos/2796105/pexels-photo-2796105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
     <div class="banner-title">
-      <h1>Ready to get smashed?</h1>
+      <h1>Generic Cocktail Generator</h1>
+      <div class="banner-button">
+        <a class="btn" href="<%= new_cocktail_path(@cocktail) %>" role="button">Add a cocktail</a>
+      </div>
     </div>
   </div>
 
@@ -23,7 +26,5 @@
     </div>
   </div>
 
-  <div class="footer">
-    <a class="btn" href="<%= new_cocktail_path(@cocktail) %>" role="button">Add a cocktail</a>
-  </div>
+  <div class="footer"></div>
 </body>

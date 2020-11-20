@@ -18,8 +18,6 @@ file = URI.open('https://images.kitchenstories.io/recipeImages/LongIslandIcedTea
 cocktail = Cocktail.new(name: 'Long Island Iced Tea')
 cocktail.photo.attach(io: file, filename: 'liit.jpg', content_type: 'image/jpg')
 
-Cocktail.create(name: "Old fashioned")
-
 Ingredient.create(name: "Lemon")
 Ingredient.create(name: "Ice")
 Ingredient.create(name: "Mint leaves")
